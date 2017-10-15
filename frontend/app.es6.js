@@ -1,4 +1,6 @@
 require('./reset.less');
+require('./flickr/flickr.page.less');
+require('./directives/photocard/photocard.less');
 
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';

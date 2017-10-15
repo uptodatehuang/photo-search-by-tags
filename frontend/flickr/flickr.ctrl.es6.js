@@ -1,7 +1,7 @@
-FlickrController.$inject = ['$scope', '$log', 'FlickrService'];
+FlickrController.$inject = ['FlickrService'];
 
 
-function FlickrController($scope, $log, FlickrService) {
+function FlickrController(FlickrService) {
 
   var vm = this;
 
