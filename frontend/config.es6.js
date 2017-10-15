@@ -4,12 +4,13 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.otherwise("/");
 
   $stateProvider
-    .state('main', {
+    .state('flickr', {
       url: '/',
-      template: require('./main.page.html'),
-      controller: 'MainCtrl',
-      title: ''
+      template: require('./flickr/flickr.page.html'),
+      controller: 'FlickrController',
+      controllerAs: 'vm'
     });
+
 }
 
 export default ['$stateProvider', '$urlRouterProvider', '$locationProvider', config];

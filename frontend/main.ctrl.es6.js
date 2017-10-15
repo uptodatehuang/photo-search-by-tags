@@ -1,7 +1,7 @@
 MainCtrl.$inject = ['$scope'];
 
 function MainCtrl($scope) {
-  $scope.name = 'world';
+  var vm = this;
 }
 
 export default MainCtrl;

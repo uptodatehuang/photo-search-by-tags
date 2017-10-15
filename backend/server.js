@@ -2,7 +2,10 @@ var express = require('express');
 var path = require('path');
 var httpProxy = require('http-proxy');
 
+var flickr = require('./routes/flickr');
+
 var proxy = httpProxy.createProxyServer();
+
 var app = express();
 
 var isProduction = process.env.NODE_ENV === 'production';
@@ -24,9 +27,11 @@ app.use(express.static(publicPath));
 
 // place your handlers here
 
-app.get('/*', function(req, res) {
+app.get('/', function(req, res) {
   res.sendFile(path.join(publicPath, 'index.html'));
 });
+
+app.get('/api/flickr/photos_public', flickr.getPublicPhotos);
 
 // It is important to catch any errors from the proxy or the
 // server will crash. An example of this is connecting to the
