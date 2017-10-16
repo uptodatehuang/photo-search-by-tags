@@ -1,6 +1,5 @@
 ### Introduction
-
-this simple angular.js app will fetch and display photos from Flickr's public api service
+This web app will fetch and display photos from Flickr's public api service
 
 
 ### installation
@@ -61,3 +60,6 @@ Do not forget to specify your app domain in `server.js` for production mode!
 ### Reference
 - angular-express-webpack-boilerplate https://github.com/tenphi/angular-express-webpack-boilerplate
 - angularjs-webpack https://github.com/preboot/angularjs-webpack
+- webpack https://webpack.js.org/
+- karma https://karma-runner.github.io/1.0/index.html
+- Flickr's public feed https://www.flickr.com/services/feeds/
