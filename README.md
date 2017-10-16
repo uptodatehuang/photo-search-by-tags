@@ -63,3 +63,4 @@ Do not forget to specify your app domain in `server.js` for production mode!
 - webpack https://webpack.js.org/
 - karma https://karma-runner.github.io/1.0/index.html
 - Flickr's public feed https://www.flickr.com/services/feeds/
+- Johnpapa Angular.js Code styling guide https://github.com/johnpapa/angular-styleguide
