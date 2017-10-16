@@ -1,5 +1,4 @@
 var Webpack = require('webpack');
-var StatsPlugin = require('stats-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var autoprefixer = require('autoprefixer-core');
 var csswring = require('csswring');
@@ -60,8 +59,7 @@ var config = {
     // We have to manually add the Hot Replacement plugin when running
     // from Node
     new ExtractTextPlugin("styles.css"),
-    new Webpack.optimize.UglifyJsPlugin({ minimize: true }),
-    new StatsPlugin(path.join(__dirname, 'stats.json'), { chunkModules: true })
+    new Webpack.optimize.UglifyJsPlugin({ minimize: true })
   ]
 };
 

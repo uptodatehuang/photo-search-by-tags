@@ -60,4 +60,4 @@ Do not forget to specify your app domain in `server.js` for production mode!
 
 ### Reference
 angular-express-webpack-boilerplate https://github.com/tenphi/angular-express-webpack-boilerplate
-
+angularjs-webpack https://github.com/preboot/angularjs-webpack

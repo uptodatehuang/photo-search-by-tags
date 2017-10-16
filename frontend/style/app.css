@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -45,4 +44,52 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/*flickr page */
+#flickr_photo_search_page #search_section{
+	margin: 10px auto;
+	text-align: center;
+}
+
+#flickr_photo_search_page #search_section .search_info{
+	font-size: 20px;
+	margin: 10px auto;
+}
+
+#flickr_photo_search_page #search_section input[type=text] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('/img/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/*#flickr_photo_search_page #search_section input[type=text]:focus {
+    width: 100%;
+}*/
+
+#flickr_photo_search_page #photo_list_result{
+	display:flex;
+	flex-flow:row wrap;
+}
+
+
+#flickr_photo_search_page #photo_list_result .photo_card{
+	border:1px solid grey; 
+	border-radius: 5px; 
+	word-wrap: break-word;
+	margin:3px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
 }

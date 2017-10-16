@@ -1,0 +1,30 @@
+<div id="flickr_photo_search_page"  class="container" >
+	<div id="search_section" >
+		<input 
+		class=""
+		type="text" 
+		placeholder="Enter a flickr tag to start search..." 
+		ng-model="vm.searchInput" 
+		ng-model-options="{debounce: 300}" 
+		ng-change="vm.searchInputChanged()" />
+
+		<div class="search_info" ng-if="vm.isSearching == false && vm.photoListResult.length == 0 && !vm.errorMessage">
+			No result found.
+		</div>
+
+		<div class="search_info" ng-if="vm.errorMessage">
+			{{vm.errorMessage}}
+		</div>
+
+		<div class="search_info" ng-if="vm.isSearching == true">
+			Searching...
+		</div>
+	</div>
+
+
+	<div id="photo_list_result" ng-if="vm.photoListResult.length > 0" >
+		<div ng-repeat="photoItem in vm.photoListResult track by $index" >
+			<photo-card data-item="photoItem"> </photo-card>
+		</div>
+	</div>
+</div>
