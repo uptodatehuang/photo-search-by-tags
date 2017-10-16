@@ -1,7 +1,7 @@
 {
-  "name": "angular-webpack-workflow",
+  "name": "photo search by tags",
   "version": "1.1.0",
-  "description": "A workflow for Angular made with Webpack",
+  "description": "photo search by tags",
   "scripts": {
     "build": "rimraf dist && webpack --bail --progress --profile",
     "server": "webpack-dev-server --history-api-fallback --inline --progress",
@@ -11,14 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/preboot/angularjs-webpack.git"
+    "url": "https://github.com/uptodatehuang/photo-search-by-tags.git"
   },
-  "author": "Jesus Rodriguez",
+  "author": "Kai Huang",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/preboot/angularjs-webpack/issues"
-  },
-  "homepage": "https://github.com/preboot/angularjs-webpack",
+  "homepage": "https://github.com/uptodatehuang/photo-search-by-tags.git",
   "dependencies": {
     "angular": "^1.5.8",
     "angular-ui-router": "^0.3.2",
