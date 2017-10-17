@@ -38,7 +38,7 @@ function FlickrController(FlickrService) {
 
   function getPublicPhotosFailedHandler(response) {
     vm.isSearching = false;
-    vm.errorMessage = "Error occorred.";
+    vm.errorMessage = "Error occurred.";
   }
 
 }
