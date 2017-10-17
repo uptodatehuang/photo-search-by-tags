@@ -10,7 +10,7 @@ import FlickrService from './services/flickr.service.js';
 import photoCard from './directives/photocard/photocard.directive.js';
 import safeHtml from './filters/safeHtml.filter.js';
 
-const MODULE_NAME = 'app';
+var MODULE_NAME = 'app';
 
 angular.module(MODULE_NAME, [uiRouter])
   

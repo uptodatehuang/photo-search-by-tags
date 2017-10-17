@@ -1,7 +1,7 @@
 FlickrService.$inject = ['$http', '$log'];
 
 function FlickrService($http, $log) {
-  	const FLICKR_PUBLIC_PHOTO_URL = '/api/flickr/photos_public';
+  	var FLICKR_PUBLIC_PHOTO_URL = '/api/flickr/photos_public';
   	return {
 		getPublicPhotos : function(tags) {
 			

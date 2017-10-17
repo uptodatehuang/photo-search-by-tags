@@ -1,9 +1,9 @@
 import appModule from '../../app.module';
 
-describe('Directive: photoCard', () => {
-  let element, scope;
+describe('Directive: photoCard', function() {
+  var element, scope;
   
-  beforeEach(() => {
+  beforeEach(function() {
       angular.mock.module(appModule);
 
       angular.mock.inject(function($rootScope, $compile) {
